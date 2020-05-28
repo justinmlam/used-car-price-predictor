@@ -7,25 +7,47 @@
 
     </div>
     <div class="main-page">
-        <div class="info-title-wrapper pb-5">
+        <div class="info-title-wrapper pt-4 pb-4">
             <div class="site-title-wrapper">
                 <h1 class="page-title"><a href="/predictor"><i>predictor</i></a></h1>
             </div>
         </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm question-field">
-                    Q1
+        <form action="/predictor/prediction" method="post">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-sm question-field">
+                        {% csrf_token %}
+                        {{ form.brand.label_tag }}
+                        {{ form.brand }}
+                    </div>
+                    <div class="col-sm question-field">
+                        {{ form.model.label_tag }}
+                        {{ form.model }}
+                    </div>
+                    <div class="col-sm question-field">
+                        {{ form.year.label_tag }}
+                        {{ form.year }}
+                    </div>
                 </div>
-                <div class="col-sm question-field">
-                    Q2
-                </div>
-                <div class="col-sm question-field">
-                    Q3
+                <div class="row">
+                    <div class="col-sm question-field">
+                        {% csrf_token %}
+                        {{ form.brand.label_tag }}
+                        {{ form.brand }}
+                    </div>
+                    <div class="col-sm question-field">
+                        {{ form.model.label_tag }}
+                        {{ form.model }}
+                    </div>
+                    <div class="col-sm question-field">
+                        {{ form.year.label_tag }}
+                        {{ form.year }}
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <input class="btn btn-outline-light btn-submit" type="submit" value="Submit">
+        </form>
     </div>
 
     <div class="container empty-space">

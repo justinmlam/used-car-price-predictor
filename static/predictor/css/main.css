@@ -22,10 +22,11 @@ a {
 
 .main-page {
   color: white;
-  height: 15rem;
+  height: 21rem;
   margin: 0 10% 0;
   border-color: white;
-  border: solid; }
+  border: solid;
+  position: relative; }
 
 .page {
   top: 54px;
@@ -33,5 +34,22 @@ a {
   position: absolute;
   width: 100%;
   background-image: linear-gradient(to bottom right, #00053d, black); }
+
+.text-field {
+  border-radius: 1rem;
+  padding: .2rem .5rem;
+  width: 60%;
+  margin: auto;
+  text-align: center; }
+  .text-field:focus {
+    outline: none; }
+
+.btn-submit {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+label {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */
