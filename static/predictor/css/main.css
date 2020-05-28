@@ -1,6 +1,37 @@
-.yes {
-  color: red; }
-  .yes--no {
-    color: blue; }
+.question-field {
+  text-align: center; }
+
+.info-title-wrapper {
+  border-bottom: 1rem;
+  border-color: black; }
+
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+
+.page-title {
+  text-align: center;
+  color: white; }
+
+.empty-space {
+  height: 10rem; }
+
+.main-page {
+  color: white;
+  height: 15rem;
+  margin: 0 10% 0;
+  border-color: white;
+  border: solid; }
+
+.page {
+  top: 54px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #00053d, black); }
 
 /*# sourceMappingURL=main.css.map */

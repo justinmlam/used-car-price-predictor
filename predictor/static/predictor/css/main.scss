@@ -1,7 +1,49 @@
-.yes {
-    color:red;
+.question-field {
+    text-align: center;
+}
 
-    &--no{
-        color:blue;
+.info-title-wrapper {
+    // background-color: #d3d3d3;
+    border-bottom: 1rem;
+    border-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: white; 
+        text-decoration:none; 
+        cursor:pointer;  
     }
+}
+
+.page-title {
+    text-align: center;
+    color: white;
+}
+
+.info-title-wrapper {
+
+}
+
+.empty-space {
+    height: 10rem;
+}
+
+.main-page {
+    color: white;
+    height: 15rem;
+    margin: 0 10% 0;
+    border-color: white;
+    border: solid;
+}
+
+.page {
+    top: 54px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #00053d, black);
 }
