@@ -29,19 +29,33 @@
                         {{ form.year }}
                     </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col-sm question-field">
+                        {% csrf_token %}
+                        {{ form.odometer.label_tag }}
+                        {{ form.odometer }}
+                    </div>
+                    <div class="col-sm question-field">
+                        {{ form.title.label_tag }}
+                        {{ form.title }}
+                    </div>
+                    <div class="col-sm question-field">
+                        
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm question-field">
                         {% csrf_token %}
-                        {{ form.brand.label_tag }}
-                        {{ form.brand }}
+                        {{ form.color.label_tag }}
+                        {{ form.color }}
                     </div>
                     <div class="col-sm question-field">
-                        {{ form.model.label_tag }}
-                        {{ form.model }}
+                        {{ form.transmission.label_tag }}
+                        {{ form.transmission }}
                     </div>
                     <div class="col-sm question-field">
-                        {{ form.year.label_tag }}
-                        {{ form.year }}
+                        {{ form.condition.label_tag }}
+                        {{ form.condition }}
                     </div>
                 </div>
             </div>
